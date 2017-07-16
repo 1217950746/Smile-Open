@@ -1,0 +1,38 @@
+{
+    "name": "smile-open",
+    "displayName": "Smile Open",
+    "description": "只想安静的在系统中打开一个文件",
+    "publisher": "oneo",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1217950746/Smile-Open"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.smileopen"
+    ],
+    "main": "main.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.smileopen",
+                "title": "打开"
+            }
+        ],
+        "menus": {
+            "explorer/context": [
+                {
+                    "command": "extension.smileopen",
+                    "group": "navigation@0"
+                }
+            ]
+        }
+    }
+}
