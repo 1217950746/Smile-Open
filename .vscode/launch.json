@@ -7,11 +7,8 @@
             "request": "launch",
             "runtimeExecutable": "${execPath}",
             "args": [
-                "${workspaceRoot}/.test",
+                "${workspaceRoot}/__TEST__",
                 "--extensionDevelopmentPath=${workspaceRoot}"
-            ],
-            "outFiles": [
-                "${workspaceRoot}/*.js"
             ]
         }
     ]

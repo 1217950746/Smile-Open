@@ -12,14 +12,13 @@ exports.activate = (context) => {
                 case "win32":
                     exec("start '" + e.fsPath + "'")
                     break
+                case "linux":
+                    exec("xdg-open '" + e.fsPath + "'")
+                    break
                 default:
-                    vscode.window.showInformationMessage("没有 " + platform + " 平台的打开事件！")
+                    vscode.window.showInformationMessage("Not support " + platform + " !")
                     break
             }
         }
     }))
-}
-
-exports.deactivate = () => {
-
 }
