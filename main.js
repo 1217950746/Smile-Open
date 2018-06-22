@@ -10,7 +10,7 @@ exports.activate = (context) => {
                     exec("open '" + e.fsPath + "'")
                     break
                 case "win32":
-                    exec('"' + e.fsPath + '"')
+                    exec('explorer "' + e.fsPath + '"')
                     break
                 case "linux":
                     exec("xdg-open '" + e.fsPath + "'")
